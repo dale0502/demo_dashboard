@@ -50,14 +50,14 @@ const productionChartRef = ref()
 let chart: echarts.ECharts | null = null
 
 const columns = [
-  { name: 'business', label: '事業部', field: 'business', align: 'left' },
-  { name: 'product', label: '產品', field: 'product', align: 'left' },
-  { name: 'unit', label: '單位', field: 'unit', align: 'left' },
-  { name: 'realInput', label: '實際入庫量', field: 'realInput', align: 'right' },
-  { name: 'planInput', label: '目標產量', field: 'planInput', align: 'right' },
-  { name: 'totalPlan', label: '累計產量', field: 'totalPlan', align: 'right' },
-  { name: 'planTarget', label: '累計目標', field: 'planTarget', align: 'right' },
-  { name: 'outputRate', label: '產量率', field: 'outputRate', align: 'right' }
+  { name: 'business', label: '事業部', field: 'business', align: 'left' as const },
+  { name: 'product', label: '產品', field: 'product', align: 'left' as const },
+  { name: 'unit', label: '單位', field: 'unit', align: 'left' as const },
+  { name: 'realInput', label: '實際入庫量', field: 'realInput', align: 'right' as const },
+  { name: 'planInput', label: '目標產量', field: 'planInput', align: 'right' as const },
+  { name: 'totalPlan', label: '累計產量', field: 'totalPlan', align: 'right' as const },
+  { name: 'planTarget', label: '累計目標', field: 'planTarget', align: 'right' as const },
+  { name: 'outputRate', label: '產量率', field: 'outputRate', align: 'right' as const }
 ]
 
 const tableData = [

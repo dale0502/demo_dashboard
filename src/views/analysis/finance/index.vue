@@ -117,12 +117,12 @@
 import { ref } from 'vue'
 
 const columns = [
-  { name: 'category', align: 'left', label: '指標類別', field: 'category' },
-  { name: 'name', align: 'left', label: '財務指標', field: 'name' },
-  { name: 'y92', align: 'center', label: '92年度', field: 'y92' },
-  { name: 'y93', align: 'center', label: '93年度', field: 'y93' },
-  { name: 'y94', align: 'center', label: '94年度', field: 'y94' },
-  { name: 'trend', align: 'center', label: '趨勢', field: 'trend' }
+  { name: 'category', align: 'left' as const, label: '指標類別', field: 'category' },
+  { name: 'name', align: 'left' as const, label: '財務指標', field: 'name' },
+  { name: 'y92', align: 'center' as const, label: '92年度', field: 'y92' },
+  { name: 'y93', align: 'center' as const, label: '93年度', field: 'y93' },
+  { name: 'y94', align: 'center' as const, label: '94年度', field: 'y94' },
+  { name: 'trend', align: 'center' as const, label: '趨勢', field: 'trend' }
 ]
 
 const financialData = [

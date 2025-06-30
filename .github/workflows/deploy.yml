@@ -29,4 +29,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist/spa  # 修改這裡，指定 Quasar 的輸出目錄 
+          publish_dir: ./dist  # 修改為 Vue 的默認輸出目錄 

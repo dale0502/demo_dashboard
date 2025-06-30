@@ -114,8 +114,6 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
-
 const columns = [
   { name: 'category', align: 'left' as const, label: '指標類別', field: 'category' },
   { name: 'name', align: 'left' as const, label: '財務指標', field: 'name' },

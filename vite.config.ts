@@ -17,5 +17,5 @@ export default defineConfig({
       sassVariables: "@/css/quasar-variables.scss",
     }),
   ],
-  base: '/demo-dashboard/',
+  base: '/demo_dashboard/',
 });
